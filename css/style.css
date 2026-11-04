@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+}
+#cont {
+    width: 100%;
+    height: 100dvh;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+span {
+    color: cornflowerblue;
+    text-shadow: 1px 1px 10px #6494edbe;
+}
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    min-width: 130px;
+}
+.separador {
+    min-width: auto;
+    padding: 0 0.15em;
+}
+#mileseconds {
+    align-self: flex-end;
+    font-size: 0.8em;
+    min-width: 3ch;
+}
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+button {
+    color: rgb(0, 86, 247);
+    text-transform: uppercase;
+    margin: 0px 3px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid rgb(53, 111, 219);
+    transition: all 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+#btn-start {
+    background-color: cornflowerblue;
+    color: white;
+}
+#btn-pouse,
+#btn-resume {
+    display: none;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+
+    .timer {
+        font-size: 3em;
+    }
+
+    .time {
+        min-width: 60px;
+        margin-right: 5px;
+    }
+    .buttons {
+        width: 100%;
+    }
+    button {
+        flex: 1;
+        height: 50px;
+        padding: 12px 15px;
+        font-size: 12px;
+    } 
+    h1 {
+        font-size: 2em;
+    }
+    button:hover {
+    transform: scale(1);
+}
+
+}
